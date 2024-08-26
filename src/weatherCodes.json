@@ -1,0 +1,96 @@
+{
+  "0": { "icon": "fa-solid fa-sun", "description": "Derült égbolt" },
+  "1": { "icon": "fa-solid fa-cloud-sun", "description": "Többnyire derült" },
+  "2": { "icon": "fa-solid fa-cloud-sun", "description": "Részben felhős" },
+  "3": { "icon": "fa-solid fa-cloud", "description": "Borult" },
+  "45": { "icon": "fa-solid fa-smog", "description": "Köd" },
+  "48": {
+    "icon": "fa-solid fa-cloud-fog",
+    "description": "Lerakódó zúzmarás köd"
+  },
+  "51": {
+    "icon": "fa-solid fa-droplet",
+    "description": "Szitálás: Enyhe intenzitás"
+  },
+  "53": {
+    "icon": "fa-solid fa-droplet",
+    "description": "Szitálás: Mérsékelt intenzitás"
+  },
+  "55": {
+    "icon": "fa-solid fa-droplet",
+    "description": "Szitálás: Erős intenzitás"
+  },
+  "56": {
+    "icon": "fa-solid fa-cloud-sleet",
+    "description": "Ónos szitálás: Enyhe intenzitás"
+  },
+  "57": {
+    "icon": "fa-solid fa-cloud-sleet",
+    "description": "Ónos szitálás: Erős intenzitás"
+  },
+  "61": {
+    "icon": "fa-solid fa-cloud-rain",
+    "description": "Eső: Enyhe intenzitás"
+  },
+  "63": {
+    "icon": "fa-solid fa-cloud-rain",
+    "description": "Eső: Mérsékelt intenzitás"
+  },
+  "65": {
+    "icon": "fa-solid fa-cloud-rain",
+    "description": "Eső: Erős intenzitás"
+  },
+  "66": {
+    "icon": "fa-solid fa-cloud-sleet",
+    "description": "Ónos eső: Enyhe intenzitás"
+  },
+  "67": {
+    "icon": "fa-solid fa-cloud-sleet",
+    "description": "Ónos eső: Erős intenzitás"
+  },
+  "71": {
+    "icon": "fa-solid fa-cloud-snow",
+    "description": "Hóesés: Enyhe intenzitás"
+  },
+  "73": {
+    "icon": "fa-solid fa-cloud-snow",
+    "description": "Hóesés: Mérsékelt intenzitás"
+  },
+  "75": {
+    "icon": "fa-solid fa-cloud-snow",
+    "description": "Hóesés: Erős intenzitás"
+  },
+  "77": { "icon": "fa-solid fa-snowflake", "description": "Hószemcsék" },
+  "80": {
+    "icon": "fa-solid fa-cloud-showers-heavy",
+    "description": "Zápor: Enyhe intenzitás"
+  },
+  "81": {
+    "icon": "fa-solid fa-cloud-showers-heavy",
+    "description": "Zápor: Mérsékelt intenzitás"
+  },
+  "82": {
+    "icon": "fa-solid fa-cloud-showers-heavy",
+    "description": "Zápor: Erős intenzitás"
+  },
+  "85": {
+    "icon": "fa-solid fa-cloud-snow",
+    "description": "Hózápor: Enyhe intenzitás"
+  },
+  "86": {
+    "icon": "fa-solid fa-cloud-snow",
+    "description": "Hózápor: Erős intenzitás"
+  },
+  "95": {
+    "icon": "fa-solid fa-bolt",
+    "description": "Zivatar: Enyhe vagy mérsékelt"
+  },
+  "96": {
+    "icon": "fa-solid fa-bolt",
+    "description": "Zivatar enyhe jégesővel"
+  },
+  "99": {
+    "icon": "fa-solid fa-bolt",
+    "description": "Zivatar erős jégesővel"
+  }
+}
