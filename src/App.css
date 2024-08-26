@@ -2,16 +2,16 @@ html,
 body {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* Prevent scrolling */
+  overflow: hidden;
 }
 
 .App {
   text-align: center;
   color: white;
-  height: 100vh; /* Ensure the App takes the full height of the viewport */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  position: relative; /* Add relative positioning */
+  position: relative;
 }
 
 .weather-layout {
@@ -20,27 +20,27 @@ body {
   background-color: rgb(167, 214, 233);
   width: 100%;
   padding: 20px;
-  flex: 1; /* Allow the weather-layout to take up remaining space */
-  overflow: hidden; /* Prevent scrolling within the layout */
+  flex: 1;
+  overflow: hidden;
 }
 
 .current-weather {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 5px; /* Reduce padding */
-  margin: 5px; /* Reduce margin */
+  padding: 5px;
+  margin: 5px;
 }
 
 .current-weather h2,
 .current-weather h4,
 .current-weather p {
   margin: 0;
-  cursor: pointer; /* Add cursor pointer to indicate clickable */
+  cursor: pointer;
 }
 
 .current-weather button {
-  align-self: center; /* Move the button to the right */
+  align-self: center;
 }
 
 .forecast-container {
@@ -48,47 +48,47 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden; /* Prevent scrolling within the container */
+  overflow: hidden;
 }
 
 .weather-table {
   width: 100%;
-  height: 100%; /* Allow the table to take full height */
+  height: 100%;
   overflow-y: auto;
-  margin-bottom: 10px; /* Reduce margin to save space */
-  border-collapse: collapse; /* Ensure no borders between cells */
+  margin-bottom: 10px;
+  border-collapse: collapse;
 }
 
 .weather-table th,
 .weather-table td {
   text-align: center;
-  padding: 2px 4px; /* Further reduce padding to make cells smaller in height */
-  line-height: 1; /* Further reduce line height to make text more compact */
-  border: none; /* Remove cell borders */
+  padding: 2px 4px;
+  line-height: 1;
+  border: none;
 }
 
 .weather-table i {
-  vertical-align: middle; /* Align icons vertically in the middle */
-  font-size: 1.5em; /* Adjust icon size */
+  vertical-align: middle;
+  font-size: 1.5em;
 }
 
 .chart-container {
   width: 80%;
   height: 100%;
-  max-height: 300px; /* Limit the height of the chart container */
+  max-height: 300px;
 }
 
 .signature {
-  position: absolute; /* Position the signature absolutely */
-  bottom: 10px; /* 10px from the bottom */
-  left: 10px; /* 10px from the left */
-  font-size: 1em; /* Adjust font size as needed */
-  color: white; /* Ensure the text color is white */
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1em;
+  color: white;
 }
 
 @media (max-width: 768px) {
   .weather-layout {
-    flex-direction: column; /* Stack the elements vertically */
+    flex-direction: column;
     align-items: center;
   }
 
@@ -98,83 +98,83 @@ body {
   }
 
   .current-weather {
-    padding: 0px; /* Further reduce padding for smaller screens */
-    margin: 5px; /* Further reduce margin for smaller screens */
+    padding: 0px;
+    margin: 5px;
     max-height: 100px;
   }
 
   .current-weather button {
-    display: none; /* Hide the button on smaller screens */
+    display: none;
   }
 
   .weather-table th,
   .weather-table td {
-    padding: 1px 2px; /* Further reduce padding */
-    font-size: 0.8em; /* Scale down text size */
+    padding: 1px 2px;
+    font-size: 0.8em;
   }
 
   .weather-table i {
-    font-size: 1.2em; /* Adjust icon size for smaller screens */
+    font-size: 1.2em;
   }
 
   .chart-container {
-    max-width: 100%; /* Allow chart to take full width */
+    max-width: 100%;
     width: 100%;
     height: 100%;
-    max-height: 200px; /* Reduce max height for the chart container */
+    max-height: 180px;
   }
 
   .weather-table i {
-    font-size: 1.5em; /* Scale down icon size */
+    font-size: 1.5em;
   }
 
   .signature {
-    position: fixed; /* Fix the position */
-    bottom: 5px; /* 10px from the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center */
-    font-size: 0.9em; /* Adjust font size as needed */
-    color: white; /* Ensure the text color is white */
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9em;
+    color: white;
     margin-top: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .current-weather p {
-    font-size: 0.8em; /* Further scale down text size */
+    font-size: 0.8em;
   }
 
   .current-weather button {
-    display: none; /* Hide the button on smaller screens */
+    display: none;
   }
 
   .weather-table {
-    height: 50%; /* Increase the height of the weather table */
-    max-height: none; /* Remove max-height restriction */
+    height: 50%;
+    max-height: none;
   }
 
   .weather-table th,
   .weather-table td {
-    padding: 6px 4px; /* Further reduce padding */
-    font-size: 0.8em; /* Scale down text size */
+    padding: 6px 4px;
+    font-size: 0.8em;
   }
 
   .weather-table i {
-    font-size: 1em; /* Further adjust icon size for very small screens */
+    font-size: 1em;
     padding-top: 0.6rem;
   }
 
   .chart-container {
-    display: none; /* Hide the chart container on very small screens */
+    display: none;
   }
 
   .signature {
-    position: fixed; /* Fix the position */
-    bottom: 5px; /* 10px from the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center */
-    font-size: 0.8em; /* Adjust font size as needed */
-    color: white; /* Ensure the text color is white */
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    color: white;
     margin-top: 10px;
   }
 }

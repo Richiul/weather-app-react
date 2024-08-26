@@ -100,7 +100,7 @@ function App() {
     },
     scales: {
       x: {
-        display: !isSmallWindow(), // Hide x-axis labels on small screens
+        display: !isSmallWindow(),
       },
     },
   };
