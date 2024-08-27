@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
   background-color: rgb(167, 214, 233);
   width: 100%;
-  padding: 20px;
+  padding: 8rem 4rem;
   flex: 1;
   overflow: hidden;
 }
@@ -142,6 +142,13 @@ body {
 }
 
 @media (max-width: 480px) {
+  .chart-container {
+    max-height: 150px;
+  }
+  .weather-layout {
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+  }
   .current-weather p {
     font-size: 0.8em;
   }
@@ -151,8 +158,8 @@ body {
   }
 
   .weather-table {
-    height: 100%;
-    max-height: none;
+    height: 70%;
+    max-height: 60vh;
   }
 
   .weather-table th,
@@ -164,10 +171,6 @@ body {
   .weather-table i {
     font-size: 1em;
     padding-top: 0.6rem;
-  }
-
-  .chart-container {
-    display: none;
   }
 
   .signature {

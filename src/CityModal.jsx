@@ -62,7 +62,7 @@ const CityModal = ({ isOpen, onRequestClose, onSelectCity }) => {
           type="text"
           value={city}
           onChange={handleInputChange}
-          className="border border-gray-600 rounded p-2 w-full mb-1"
+          className="border border-gray-400 rounded p-2 w-full mb-1"
         />
         {loading && (
           <div className="text-center mb-3">
@@ -70,17 +70,19 @@ const CityModal = ({ isOpen, onRequestClose, onSelectCity }) => {
           </div>
         )}
         <div className="relative">
-          <ul className="absolute z-10 w-full bg-white border border-gray-300 rounded shadow-lg max-h-60 overflow-y-auto">
-            {suggestions.map((suggestion) => (
-              <li
-                key={suggestion.id}
-                onClick={() => handleSelectCity(suggestion)}
-                className="p-2 cursor-pointer border border-gray-200 hover:bg-gray-200"
-              >
-                {suggestion.name}
-              </li>
-            ))}
-          </ul>
+          {suggestions.length > 0 && (
+            <ul className="absolute z-10 w-full bg-white border border-gray-300 rounded shadow-lg max-h-60 overflow-y-auto">
+              {suggestions.map((suggestion) => (
+                <li
+                  key={suggestion.id}
+                  onClick={() => handleSelectCity(suggestion)}
+                  className="p-2 cursor-pointer border border-gray-200 hover:bg-gray-200"
+                >
+                  {suggestion.name}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </Modal>
