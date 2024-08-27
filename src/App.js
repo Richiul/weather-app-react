@@ -106,14 +106,17 @@ function App() {
 
   return (
     <div className="App">
-      <div className="weather-layout">
+      <div className="weather-layout bg-gradient-to-r from-sky-300 to-sky-200">
         {currentWeather && (
-          <div className="current-weather">
+          <div className="current-weather ">
             <h2 onClick={() => setIsModalOpen(true)}>{city}</h2>
-            <h4 className="text-4xl"> {currentWeather.temperature_2m}°C</h4>
+            <h4 className="text-4xl flex text-center justify-center">
+              {currentWeather.temperature_2m}
+              <p className="pl-2">°C</p>
+            </h4>
             <p>{weatherCodes[currentWeather.weather_code].description}</p>
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-sm"
+              className="mt-2 bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md text-center items-center justify-center"
               onClick={() => setIsModalOpen(true)}
             >
               Város kiválasztása
@@ -125,9 +128,7 @@ function App() {
             <table className="weather-table">
               <thead>
                 <tr>
-                  <th className="px-4 py-2">Nap</th>
-                  <th className="px-4 py-2">Időjárás</th>
-                  <th className="px-4 py-2">Min/Max Hőmérséklet</th>
+                  <th className="px-4 py-2 text-xs">7 napos elorejelzes</th>
                 </tr>
               </thead>
               <tbody>

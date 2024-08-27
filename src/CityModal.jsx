@@ -54,8 +54,8 @@ const CityModal = ({ isOpen, onRequestClose, onSelectCity }) => {
       className="flex items-center justify-center"
       overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
     >
-      <div className="bg-white p-5 rounded-lg shadow-lg w-full max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-        <h2 className="text-center mb-5">Select City</h2>
+      <div className="bg-white text-gray-600 p-5 rounded-lg shadow-lg w-full max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+        <h2 className="text-start mb-5 font-semibold">Város kiválasztása</h2>
         <input
           type="text"
           value={city}
@@ -67,17 +67,19 @@ const CityModal = ({ isOpen, onRequestClose, onSelectCity }) => {
             <FaSpinner className="animate-spin" />
           </div>
         )}
-        <ul className="list-none p-0">
-          {suggestions.map((suggestion) => (
-            <li
-              key={suggestion.id}
-              onClick={() => handleSelectCity(suggestion)}
-              className="p-2 cursor-pointer border-b border-gray-300"
-            >
-              {suggestion.name}
-            </li>
-          ))}
-        </ul>
+        <div className="relative">
+          <ul className="absolute z-10 w-full bg-white border border-gray-300 rounded shadow-lg max-h-60 overflow-y-auto">
+            {suggestions.map((suggestion) => (
+              <li
+                key={suggestion.id}
+                onClick={() => handleSelectCity(suggestion)}
+                className="p-2 cursor-pointer hover:bg-gray-200"
+              >
+                {suggestion.name}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Modal>
   );
