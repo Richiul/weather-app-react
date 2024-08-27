@@ -16,7 +16,6 @@ import CityModal from "./CityModal";
 import { Line } from "react-chartjs-2";
 import Modal from "react-modal";
 import axios from "axios";
-import responseExample from "./responseExample.json";
 import weatherCodes from "./weatherCodes.json";
 
 ChartJS.register(
@@ -88,7 +87,7 @@ function App() {
     ],
   };
 
-  const isSmallWindow = () => window.innerWidth <= 480;
+  const isSmallWindow = () => window.innerWidth <= 768;
 
   const chartOptions = {
     responsive: true,

@@ -51,58 +51,34 @@ const CityModal = ({ isOpen, onRequestClose, onSelectCity }) => {
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
-      style={{
-        content: {
-          top: "50%",
-          left: "50%",
-          right: "auto",
-          bottom: "auto",
-          marginRight: "-50%",
-          transform: "translate(-50%, -50%)",
-          padding: "20px",
-          borderRadius: "10px",
-          width: "400px",
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-        },
-        overlay: {
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-        },
-      }}
+      className="flex items-center justify-center"
+      overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
     >
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Select City</h2>
-      <input
-        type="text"
-        value={city}
-        onChange={handleInputChange}
-        className="border border-gray-600 rounded p-1"
-        style={{
-          width: "100%",
-          padding: "10px",
-          marginBottom: "10px",
-          borderRadius: "5px",
-          border: "1px solid #ccc",
-        }}
-      />
-      {loading && (
-        <div style={{ textAlign: "center", marginBottom: "10px" }}>
-          <FaSpinner className="animate-spin" />
-        </div>
-      )}
-      <ul style={{ listStyleType: "none", padding: "0" }}>
-        {suggestions.map((suggestion) => (
-          <li
-            key={suggestion.id}
-            onClick={() => handleSelectCity(suggestion)}
-            style={{
-              padding: "10px",
-              cursor: "pointer",
-              borderBottom: "1px solid #ccc",
-            }}
-          >
-            {suggestion.name}
-          </li>
-        ))}
-      </ul>
+      <div className="bg-white p-5 rounded-lg shadow-lg w-full max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+        <h2 className="text-center mb-5">Select City</h2>
+        <input
+          type="text"
+          value={city}
+          onChange={handleInputChange}
+          className="border border-gray-600 rounded p-2 w-full mb-3"
+        />
+        {loading && (
+          <div className="text-center mb-3">
+            <FaSpinner className="animate-spin" />
+          </div>
+        )}
+        <ul className="list-none p-0">
+          {suggestions.map((suggestion) => (
+            <li
+              key={suggestion.id}
+              onClick={() => handleSelectCity(suggestion)}
+              className="p-2 cursor-pointer border-b border-gray-300"
+            >
+              {suggestion.name}
+            </li>
+          ))}
+        </ul>
+      </div>
     </Modal>
   );
 };
