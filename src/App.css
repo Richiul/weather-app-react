@@ -151,14 +151,14 @@ body {
   }
 
   .weather-table {
-    height: 50%;
+    height: 100%;
     max-height: none;
   }
 
   .weather-table th,
   .weather-table td {
     padding: 6px 4px;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .weather-table i {

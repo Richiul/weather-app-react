@@ -106,7 +106,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="weather-layout bg-gradient-to-r from-sky-300 to-sky-200">
+      <div className="weather-layout bg-gradient-to-b from-sky-300 to-sky-200">
         {currentWeather && (
           <div className="current-weather ">
             <h2 onClick={() => setIsModalOpen(true)}>{city}</h2>

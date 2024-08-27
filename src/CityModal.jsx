@@ -55,12 +55,14 @@ const CityModal = ({ isOpen, onRequestClose, onSelectCity }) => {
       overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
     >
       <div className="bg-white text-gray-600 p-5 rounded-lg shadow-lg w-full max-w-md sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-        <h2 className="text-start mb-5 font-semibold">Város kiválasztása</h2>
+        <h2 className="text-start mb-5 font-semibold text-gray-500">
+          Város kiválasztása
+        </h2>
         <input
           type="text"
           value={city}
           onChange={handleInputChange}
-          className="border border-gray-600 rounded p-2 w-full mb-3"
+          className="border border-gray-600 rounded p-2 w-full mb-1"
         />
         {loading && (
           <div className="text-center mb-3">
@@ -73,7 +75,7 @@ const CityModal = ({ isOpen, onRequestClose, onSelectCity }) => {
               <li
                 key={suggestion.id}
                 onClick={() => handleSelectCity(suggestion)}
-                className="p-2 cursor-pointer hover:bg-gray-200"
+                className="p-2 cursor-pointer border border-gray-200 hover:bg-gray-200"
               >
                 {suggestion.name}
               </li>
