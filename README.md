@@ -2,8 +2,9 @@
 
 A projekt futtatásához kövesd az alábbi lépéseket:
 
-1. Klónozd a repót:
-   `git clone https://github.com/Richiul/weather-app-react.git`
+## Klónozd a repót:
+
+`git clone https://github.com/Richiul/weather-app-react.git`
 
 ## Lépj be a projekt könyvtárába:
 
